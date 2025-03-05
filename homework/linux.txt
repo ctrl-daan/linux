@@ -1,11 +1,29 @@
-186 homework.Linux/processes.txt
-  370  rm -r Coders.Linux/
-  371  ls
-  372  mkdir homework.Linux
-  373  touch homework.Linux/processes.txt
-  374  ps aux >> homework.Linux/processes.txt 
-  375  cp homework.Linux/processes.txt homework.Linux/copy.txt
-  376  mkdir homework.Linux/backup
-  377  mv homework.Linux/copy.txt homework.Linux/backup/
-  378  wc -l homework.Linux/processes.txt >> homework.Linux/selected.txt
-  379  history | tail >> homework.Linux/commands.txt
+coders@debian ~ $ cat homework/selected.txt homework/commands.txt
+188 homework/processes.txt
+76:message+     473  0.0  0.1  10800  6464 ?        Ss   19:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+96:coders      1036  0.0  0.3  54140 13080 ?        S<sl 19:28   0:00 /usr/bin/pipewire
+97:coders      1038  0.0  0.3 255392 15960 ?        S<sl 19:28   0:00 /usr/bin/wireplumber
+98:coders      1039  0.0  0.2  32252  9492 ?        S<sl 19:28   0:00 /usr/bin/pipewire-pulse
+99:coders      1042  0.0  0.1  10208  6168 ?        Ss   19:28   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+100:coders      1044  0.0  0.3 239904 12224 ?        SLsl 19:28   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+103:coders      1081  0.0  0.1 159280  7904 tty2     Ssl+ 19:28   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
+112:coders      1179  6.9 11.9 4907572 479452 ?      Ssl  19:28   5:07 /usr/bin/gnome-shell
+113:coders      1181  0.0  0.1   9120  4832 ?        S    19:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
+125:coders      1300  0.0  0.7 2587960 30728 ?       Sl   19:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
+127:coders      1316  0.0  0.0   2576   940 ?        Ss   19:28   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
+143:coders      1353  0.0  0.3 312244 13992 ?        Sl   19:28   0:03 /usr/bin/ibus-daemon --panel disable
+146:coders      1372  0.0  2.2 1272748 90544 ?       Sl   19:28   0:00 /usr/bin/gnome-software --gapplication-service
+148:coders      1381  0.0  0.4 1248608 19916 ?       Sl   19:28   0:00 /usr/bin/syncthing serve --no-browser --logfile=default
+152:coders      1484  0.0  0.8 2587932 32912 ?       Sl   19:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
+154:coders      1543  0.1  1.5 1250528 61096 ?       SNl  19:28   0:06 /usr/bin/syncthing serve --no-browser --logfile=default
+170:coders      3115  3.4 10.9 2108812 439068 ?      Sl   19:38   2:12 /usr/bin/nautilus --gapplication-service
+  390  mkdir homework
+  391  touch homework/processes.txt
+  392  ps aux >> homework/processes.txt 
+  393  cp homework/processes.txt homework/copy.txt
+  394  mkdir homework/backup
+  395* wc -l homework/processes.txt >>
+  396  wc -l homework/processes.txt >> homework/selected.txt
+  397  grep -n "/bin" homework/processes.txt >> homework/selected.txt 
+  398  history
+  399  history | tail -n +390 >> homework/commands.txt
