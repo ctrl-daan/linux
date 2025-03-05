@@ -1,45 +1,11 @@
-187 processes.txt
-76:message+     473  0.0  0.1  10800  6464 ?        Ss   19:28   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-96:coders      1036  0.0  0.3  54140 13080 ?        S<sl 19:28   0:00 /usr/bin/pipewire
-97:coders      1038  0.0  0.3 255392 15960 ?        S<sl 19:28   0:00 /usr/bin/wireplumber
-98:coders      1039  0.0  0.2  32168 10640 ?        S<sl 19:28   0:00 /usr/bin/pipewire-pulse
-99:coders      1042  0.0  0.1  10208  6124 ?        Ss   19:28   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-100:coders      1044  0.0  0.3 239904 12224 ?        SLsl 19:28   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
-103:coders      1081  0.0  0.1 159280  7904 tty2     Ssl+ 19:28   0:00 /usr/libexec/gdm-wayland-session /usr/bin/gnome-session
-112:coders      1179  7.8 11.5 4889648 461324 ?      Ssl  19:28   2:50 /usr/bin/gnome-shell
-113:coders      1181  0.0  0.1   9120  4832 ?        S    19:28   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus
-125:coders      1300  0.0  0.7 2587960 30728 ?       Sl   19:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications
-127:coders      1316  0.0  0.0   2576   940 ?        Ss   19:28   0:00 sh -c /usr/bin/ibus-daemon --panel disable $([ "$XDG_SESSION_TYPE" = "x11" ] && echo "--xim")
-143:coders      1353  0.0  0.3 312244 13992 ?        Sl   19:28   0:01 /usr/bin/ibus-daemon --panel disable
-146:coders      1372  0.0  2.2 1272748 90496 ?       Sl   19:28   0:00 /usr/bin/gnome-software --gapplication-service
-148:coders      1381  0.0  0.4 1248608 19916 ?       Sl   19:28   0:00 /usr/bin/syncthing serve --no-browser --logfile=default
-152:coders      1484  0.0  0.8 2587932 32912 ?       Sl   19:28   0:00 /usr/bin/gjs /usr/share/gnome-shell/org.gnome.ScreenSaver
-154:coders      1543  0.1  1.1 1250528 46608 ?       SNl  19:28   0:02 /usr/bin/syncthing serve --no-browser --logfile=default
-171:coders      3115  0.5  7.8 1982736 312800 ?      Sl   19:38   0:09 /usr/bin/nautilus --gapplication-service
-  327  mkdir Coders.Linux
-  328  cd Coders.Linux/
-  329  touch processes.txt
-  330  echo ps aux >> processes.txt 
-  331  cat processes.txt 
-  332  ps aux >> processes.txt 
-  333  cat processes.txt 
-  334  ls
-  335  rm processes.txt 
-  336  ls
-  337  ps aux >> processes.txt 
-  338  cp processes.txt copy.txt
-  339  ls
-  340  wc -l processes.txt 
-  341  wc -l processes.txt >> selected.txt
-  342  cat selected.txt 
-  343  man grep
-  344  grep -rni "/bin" processes.txt 
-  345  grep -rni "/bin" processes.txt >> selected.txt
-  346  cat selected.txt 
-  347  history
-  348  history | tail n 21
-  349  history | tail n21
-  350  history | tail -n21
-  351  history | tail -n23
-  352  history | tail -n26
-  353  history | tail -n27 >> commands.txt
+186 homework.Linux/processes.txt
+  370  rm -r Coders.Linux/
+  371  ls
+  372  mkdir homework.Linux
+  373  touch homework.Linux/processes.txt
+  374  ps aux >> homework.Linux/processes.txt 
+  375  cp homework.Linux/processes.txt homework.Linux/copy.txt
+  376  mkdir homework.Linux/backup
+  377  mv homework.Linux/copy.txt homework.Linux/backup/
+  378  wc -l homework.Linux/processes.txt >> homework.Linux/selected.txt
+  379  history | tail >> homework.Linux/commands.txt
