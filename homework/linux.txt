@@ -22,9 +22,9 @@ coders@debian ~ $ cat homework/selected.txt homework/commands.txt
   392  ps aux >> homework/processes.txt 
   393  cp homework/processes.txt homework/copy.txt
   394  mkdir homework/backup
-  395* wc -l homework/processes.txt >>
-  396  wc -l homework/processes.txt >> homework/selected.txt
-  397  grep -n "/bin" homework/processes.txt >> homework/selected.txt 
-  398  history
-  399  history | tail -n +390 >> homework/commands.txt
-
+  395  mv homework/copy.txt homework/backup
+  396  wc -l homework/processes.txt >>
+  397  wc -l homework/processes.txt >> homework/selected.txt
+  398  grep -n "/bin" homework/processes.txt >> homework/selected.txt 
+  399  history
+  400  history | tail -n +390 >> homework/commands.txt
