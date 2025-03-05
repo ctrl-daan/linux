@@ -27,3 +27,4 @@ coders@debian ~ $ cat homework/selected.txt homework/commands.txt
   397  grep -n "/bin" homework/processes.txt >> homework/selected.txt 
   398  history
   399  history | tail -n +390 >> homework/commands.txt
+
